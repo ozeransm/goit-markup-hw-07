@@ -271,9 +271,12 @@ button {
 .team-content {
   display: flex;
   flex-direction: column;
-
   gap: 8px;
   margin-top: 32px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-officer {
   font-weight: 500;
@@ -748,7 +751,7 @@ button {
   }
   .modal {
     max-width: 392px;
-    max-height: 586px;
+    height: auto;
   }
 }
 /* ---------TABLET */
@@ -902,7 +905,7 @@ button {
   }
   .modal {
     max-width: 408px;
-    max-height: 586px;
+    
   }
 }
 /* ----------DESKTOP */
@@ -1082,5 +1085,33 @@ button {
     flex-direction: row;
     justify-content: center;
     gap: 24px;
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container{
+    padding: 100px 0 100px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer-box-logo{
+    width: 264px;
+
+  }
+  .footer-subscribe{
+    width: 453px;
+    margin-left: 80px;
+  }
+  .footer-subscribe-container{
+    gap: 24px;
+    align-items: flex-end;
+  }
+  .footer-box-media{
+    margin-left: 120px;
+  }
+  .modal{
+    max-width: 408px;
   }
 }

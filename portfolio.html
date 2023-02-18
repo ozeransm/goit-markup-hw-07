@@ -19,17 +19,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
   </head>
   <body>
     <header class="header">
       <div class="head-container container">
-        <nav class="header-navigation">
-          <!-- <div class="logo-container"> -->
-          <a class="header-logo-link link" href="./index.html"
-            ><span class="header-logo-span">Web</span>Studio</a
-          >
-          <!-- </div> -->
+        <a class="header-logo-link link" href="./index.html"
+          ><span class="header-logo-span">Web</span>Studio</a
+        >
+        <button type="button" class="head-menu-btn" data-mobile-menu-open>
+          <svg class="head-menu-icon">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
 
+        <nav class="header-navigation">
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-item-link link" href="./index.html">Studio</a>
@@ -55,6 +59,74 @@
               <a class="addr-item-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="head-menu-mobile is-hidden" data-mobile-menu>
+        <button type="button" class="head-close-btn" data-mobile-menu-close>
+          <svg class="head-close-icon">
+            <use href="./images/icons.svg#vector"></use>
+          </svg>
+        </button>
+        <nav class="head-nav-menu">
+          <ul class="head-mobile-list-menu list">
+            <li class="header-mobile-item">
+              <a class="is-active link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-mobile-item">
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-mobile-item">
+              <a class="link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="list">
+            <li>
+              <a class="addr-mobile-item-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="addr-item-mobile-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <ul class="mobile-list-icon list">
+                <li>
+                  <a class="mobile-link-icon link" href="#">
+                    <svg class="mobile-svg-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-link-icon link" href="#">
+                    <svg class="mobile-svg-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-link-icon link" href="#">
+                    <svg class="mobile-svg-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-link-icon link" href="#">
+                    <svg class="mobile-svg-icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </address>
@@ -349,5 +421,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -310,8 +310,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   margin-top: 72px;
+}
+.custcont {
+  padding: 0;
 }
 .customer-link {
   display: flex;
@@ -754,8 +757,8 @@ button {
 .portfolio-list-img {
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 24px;
-  row-gap: 48px; */
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-item-img {
   flex-basis: 100%;
@@ -1042,11 +1045,11 @@ button {
       url(../images/pc-hero-img-1x.jpg);
   }
   .portfolio-item-img {
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 120px) / 3);
   }
   .portfolio-list-img {
     row-gap: 48px;
-    column-gap: 24px;
+    justify-content: space-around;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -1231,5 +1234,8 @@ button {
   }
   .modal {
     max-width: 408px;
+  }
+  .customer-list {
+    justify-content: space-around;
   }
 }
